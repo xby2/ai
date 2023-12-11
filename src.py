@@ -24,7 +24,7 @@ def response():
             if model is None:
                 model_path = './model_data/llama-2-7b-chat.Q2_k.gguf'
 
-                model = Llama(model_path=model_path)
+                model = Llama(model_path=model_path, n_ctx=4096)
             
             output = model(rqprompt, max_tokens=4096, echo=True)
 
