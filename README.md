@@ -12,4 +12,4 @@ Container runs on port 5005.
 
 ## Docker run
 
-1. Run container on specified port `docker run -t --name eksy-0 -e SERVICE_PORT='5005' -p 5005:5005 xby2/ai:bananatiger`
+1. Run container on specified port `docker run -d --name eksy-0 -e SERVICE_PORT='5005' -p 5005:5005 xby2/ai:bananatiger`
